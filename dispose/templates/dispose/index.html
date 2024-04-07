@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var plusButton = document.querySelector('.v79_210');
+            var minusButton = document.querySelector('.v79_213');
+            var counter = document.querySelector('.v79_215');
+            var submitButton = document.querySelector('.v82_2');
+
+            plusButton.addEventListener("click", function() {
+                counter.innerText = parseInt(counter.innerText) + 1;
+            });
+
+            minusButton.addEventListener("click", function() {
+                var currentValue = parseInt(counter.innerText);
+                if (currentValue > 1) {
+                    counter.innerText = currentValue - 1;
+                }
+            });
+
+            submitButton.addEventListener("click", function() {
+                // Add functionality for the Submit button here
+                alert("Submit button clicked!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="v79_163">
+        <div class="v79_196">
+            <div class="v79_197"></div>
+            <span class="v79_198">Bagel</span>
+            <div class="v79_199"></div>
+        </div>
+        <div class="v79_200">
+            <div class="v79_201"></div>
+            <span class="v79_202">Bagel</span>
+            <div class="v79_203"></div>
+        </div>
+        <div class="v79_204"></div>
+        <div class="v79_205">
+            <div class="v79_206"></div>
+            <span class="v79_207">Bagel</span>
+            <div class="v79_208">
+                <div class="v79_209"></div>
+                <span class="v79_210">+</span>
+            </div>
+            <div class="v79_211">
+                <div class="v79_212"></div>
+                <span class="v79_213">-</span>
+            </div>
+            <div class="v79_214"></div>
+            <span class="v79_215">1</span>
+            <span class="v82_2">Submit</span>
+        </div>
+        <div class="v79_216">
+            <div class="v79_217"></div>
+            <span class="v79_218">Stats</span>
+            <span class="v79_219">Dispose</span>
+            <div class="name"></div>
+            <span class="v79_221">Import</span>
+        </div>
+    </div>
+</body>
+</html>
