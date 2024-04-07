@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet" />
-    <link href="./css/main.css" rel="stylesheet" />
-    <title>Document</title>
+    <link href="{% static 'dispose/main.css' %}" rel="stylesheet" />
+    <title>Disposal Page</title>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             var plusButton = document.querySelector('.v79_210');
